@@ -1,0 +1,28 @@
+{
+  "name": "require-native-executable",
+  "version": "1.0.0",
+  "description": "Small utility ot check if a native executable exists, and if not, print an error message",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rapidfacture/require-native-executable.git"
+  },
+  "keywords": [
+    "native",
+    "executable",
+    "exists",
+    "check"
+  ],
+  "author": "Rapidfacture GmbH",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Rapidfacture/require-native-executable/issues"
+  },
+  "homepage": "https://github.com/Rapidfacture/require-native-executable#readme",
+  "dependencies": {
+    "command-exists": "^1.2.6"
+  }
+}
