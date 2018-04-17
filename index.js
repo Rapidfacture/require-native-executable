@@ -1,5 +1,5 @@
 const commandExists = require('command-exists');
-const commandExistsSync = commandExists.syncs;
+const commandExistsSync = commandExists.sync;
 
 class NativeExecutableMissingError extends Error {
 }

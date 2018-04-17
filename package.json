@@ -4,7 +4,7 @@
   "description": "Small utility ot check if a native executable exists, and if not, print an error message",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha test"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,9 @@
   "homepage": "https://github.com/Rapidfacture/require-native-executable#readme",
   "dependencies": {
     "command-exists": "^1.2.6"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.1.0"
   }
 }
