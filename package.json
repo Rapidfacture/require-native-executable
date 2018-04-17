@@ -1,6 +1,6 @@
 {
   "name": "require-native-executable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Small utility ot check if a native executable exists, and if not, print an error message",
   "main": "index.js",
   "scripts": {
