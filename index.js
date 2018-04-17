@@ -5,7 +5,9 @@ class NativeExecutableMissingError extends Error {
 }
 
 function _err(exeName) {
-    return new NativeExecutableMissingError(`The native executable '${exeName}' was not found on your system but is required to load this application.`);
+    const err = new NativeExecutableMissingError(`The native executable '${exeName}' was not found on your system but is required to load this application.`);
+    err.exeName = exeName;
+    return err;
 }
 
 module.exports = {
@@ -19,9 +21,10 @@ module.exports = {
     },
     requireNativeExecutable: function(exeName) {
         return new Promise((resolve, reject) => {
-            return commandExists(exeName).then(resolve).catch(() => {
+            commandExists(exeName).then(resolve).catch(() => {
                 reject(_err(exeName));
             });
         });
-    }
+    },
+    NativeExecutableMissingError: NativeExecutableMissingError
 }
